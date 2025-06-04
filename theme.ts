@@ -1,0 +1,64 @@
+import { createTheme, rem } from "@mantine/core";
+
+export const theme = createTheme({
+  fontSizes: {
+    xs: rem(12),
+    sm: rem(14),
+    md: rem(16),
+    lg: rem(18),
+    xl: rem(24),
+    xxl: rem(32),
+    xxxl: rem(40),
+  },
+  headings: {
+    sizes: {
+      h1: { fontSize: rem(40) },
+      h2: { fontSize: rem(32) },
+      h3: { fontSize: rem(24) },
+      h4: { fontSize: rem(20) },
+      h5: { fontSize: rem(18) },
+      h6: { fontSize: rem(16) },
+    },
+  },
+  defaultRadius: "md",
+  primaryColor: "white",
+  colors: {
+    white: [
+      "#ffffff",
+      "#f0f0f0",
+      "#e0e0e0",
+      "#d0d0d0",
+      "#D1D1C7",
+      "#c0c0c0",
+      "#b0b0b0",
+      "#a0a0a0",
+      "#A29E9A",
+      "#909090",
+      "#808080",
+    ],
+    black: [
+      "#080807",
+      "#0a0a0a",
+      "#0c0c0c",
+      "#0e0e0e",
+      "#101010",
+      "#121212",
+      "#141414",
+      "#161616",
+      "#181818",
+      "#1a1a1a",
+    ],
+  },
+  components: {
+    Text: {
+      defaultProps: {
+        c: "white.8",
+      },
+    },
+    Title: {
+      defaultProps: {
+        c: "white.4",
+      },
+    },
+  },
+});
