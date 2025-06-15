@@ -12,7 +12,7 @@ const Hero = () => {
           Designing Intuitive & <br /> Responsive Web Interfaces
         </Title>
         <Text>
-          Hi! I’m Thaw Zin, a Frontend Developer turning complex ideas into
+          Hi! I’m Thaw Zin, a Web Developer turning complex ideas into
           delightful user experiences — with clean code, sleek design, and
           modern tech.
         </Text>

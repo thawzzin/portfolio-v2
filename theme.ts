@@ -36,23 +36,36 @@ export const theme = createTheme({
       "#909090",
       "#808080",
     ],
-    black: [
+    dark: [
       "#080807",
       "#0a0a0a",
       "#0c0c0c",
       "#0e0e0e",
-      "#101010",
+      "#1F1F1F",
       "#121212",
       "#141414",
       "#161616",
       "#181818",
-      "#1a1a1a",
+      "#14213d",
     ],
+    blue: [
+      "#0d1526",
+      "#14213d",
+      "#283593",
+      "#3f51b5",
+      "#5c6bc0",
+      "#7986cb",
+      "#9fa8da",
+      "#c5cae9",
+      "#e8eaf6",
+      "#f3f4f6",
+    ]
   },
   components: {
     Text: {
       defaultProps: {
         c: "white.8",
+        fz: "lg"
       },
     },
     Title: {

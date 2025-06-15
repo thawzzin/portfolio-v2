@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-inter), sans-serif;
 }
@@ -36,7 +40,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(300deg, #000000, #2a2929, #000000);
+  background: linear-gradient(300deg, #000000, #14213d, #000000);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
