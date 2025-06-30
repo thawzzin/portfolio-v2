@@ -51,7 +51,7 @@ export const theme = createTheme({
     blue: [
       "#0d1526",
       "#14213d",
-      "#283593",
+      "#28427b",
       "#3f51b5",
       "#5c6bc0",
       "#7986cb",
@@ -59,18 +59,23 @@ export const theme = createTheme({
       "#c5cae9",
       "#e8eaf6",
       "#f3f4f6",
-    ]
+    ],
   },
   components: {
     Text: {
       defaultProps: {
         c: "white.8",
-        fz: "lg"
+        fz: "lg",
       },
     },
     Title: {
       defaultProps: {
         c: "white.4",
+      },
+    },
+    Button: {
+      defaultProps: {
+        color: "white.4",
       },
     },
   },

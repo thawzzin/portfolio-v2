@@ -4,16 +4,14 @@ import React from "react";
 const About = () => {
   return (
     <section id="about">
-      <Stack bg={"blue.0"} px={100} py={"xl"}>
+      <Stack p={100} py={50}>
         <Group wrap="nowrap" gap={"xl"} align="start">
-          <Stack gap={0} flex={1}>
-            <Title order={1} tt={"uppercase"}>
+            <Title flex={1} tt={"uppercase"}>
               About Me /
             </Title>
-          </Stack>
 
           <Stack w={"50%"}>
-            <Title order={3}>Hi, I am Thaw Zin, a web developer.</Title>
+            <Title order={4}>Hi, I am Thaw Zin, a web developer.</Title>
             <Text>
               As an experienced web developer with computer science education
               background, I have a solid foundation in both frontend and backend

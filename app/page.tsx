@@ -2,7 +2,9 @@
 
 import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
-import { Container, Stack, Text, Title } from "@mantine/core";
+import Skills from "@/components/sections/Skills";
+import Works from "@/components/sections/Works";
+import { Container, Divider, Stack, Text, Title } from "@mantine/core";
 import { motion, useScroll, useTransform } from "motion/react";
 
 export default function Home() {
@@ -24,14 +26,16 @@ export default function Home() {
           position: "absolute",
           zIndex: 2,
           top: "100vh",
-          maxHeight: "100vh",
+          // maxHeight: "100vh",
           width: "100%",
           borderRadius: "30px 30px 0 0",
-          overflow: "hidden",
           borderTop: "1px solid #28427b",
+          backgroundColor: "#0d1526",
         }}
       >
         <About />
+        <Works />
+        <Skills/>
       </motion.div>
     </Stack>
   );
