@@ -46,11 +46,11 @@ body {
 }
 
 .background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  width: 40%;
+  height: 100%;
   top: 0;
-  left: 0;
+  right: 10;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -61,76 +61,75 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  animation: animate 19s linear infinite;
+  animation: animate 10s linear infinite;
 }
 
 .background li:nth-child(0) {
-  left: 13%;
+  right: 13%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 1s;
 }
 .background li:nth-child(1) {
-  left: 47%;
+  right: 47%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 3s;
 }
 .background li:nth-child(2) {
-  left: 88%;
+  right: 88%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 2s;
 }
 .background li:nth-child(3) {
-  left: 5%;
+  right: 5%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 7s;
 }
 .background li:nth-child(4) {
-  left: 79%;
+  right: 79%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 14s;
 }
 .background li:nth-child(5) {
-  left: 85%;
+  right: 85%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 13s;
 }
 .background li:nth-child(6) {
-  left: 68%;
+  right: 68%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 24s;
 }
 .background li:nth-child(7) {
-  left: 28%;
+  right: 28%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 12s;
 }
 .background li:nth-child(8) {
-  left: 68%;
+  right: 68%;
   width: 44px;
   height: 44px;
   bottom: -44px;
   animation-delay: 32s;
 }
 .background li:nth-child(9) {
-  left: 69%;
+  right: 69%;
   width: 44px;
   height: 44px;
   bottom: -44px;
@@ -155,11 +154,11 @@ body {
     opacity: 0;
   }
   50% {
-    transform: translateY(-500px) rotate(360deg);
-    opacity: 1;
+    transform: translateY(-200px) rotate(360deg);
+    opacity: 0.3;
   }
   100% {
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(-400px) rotate(720deg);
     opacity: 0;
   }
 }

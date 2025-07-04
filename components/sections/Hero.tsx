@@ -8,7 +8,7 @@ const Hero = () => {
       <Header />
       <Stack ta={"center"} w={"50%"} mx={"auto"} gap={"xl"}>
         <Text>BUILDING VISIONS INTO PIXELS</Text>
-        <Title order={1}>
+        <Title fz={40}>
           Designing Intuitive & <br /> Responsive Web Interfaces
         </Title>
         <Text>

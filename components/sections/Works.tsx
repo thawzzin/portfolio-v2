@@ -33,7 +33,7 @@ const Works = () => {
             code with intuitive design.&quot;
           </Title>
         </Group>
-        <Group align="start" className="relative">
+        <Group align="start" className="relative" mt={"xl"}>
           <motion.div
             initial={{ y: -10 }}
             animate={{ y: 0 }}
@@ -41,7 +41,7 @@ const Works = () => {
             transition={{ duration: 0.3 }}
             className="sticky top-0 flex-1"
           >
-            <Title fz={200} flex={1} pos={"sticky"} top={0}>
+            <Title fz={"10rem"} flex={1} pos={"sticky"} top={0}>
               &diams;{isInView ? 3 : 1}
             </Title>
           </motion.div>
@@ -57,7 +57,6 @@ const Works = () => {
                   alt="work"
                   width={1920}
                   height={1080}
-                  // className="aspect-video"
                 />
               </div>
             ))}

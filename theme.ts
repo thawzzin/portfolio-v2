@@ -12,7 +12,7 @@ export const theme = createTheme({
   },
   headings: {
     sizes: {
-      h1: { fontSize: rem(40) },
+      h1: { fontSize: rem(50) },
       h2: { fontSize: rem(32) },
       h3: { fontSize: rem(24) },
       h4: { fontSize: rem(20) },
