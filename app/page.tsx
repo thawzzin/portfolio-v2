@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/sections/About";
+import Experiences from "@/components/sections/Experiences";
 import Hero from "@/components/sections/Hero";
 import Skills from "@/components/sections/Skills";
 import Works from "@/components/sections/Works";
@@ -35,7 +36,8 @@ export default function Home() {
       >
         <About />
         <Works />
-        <Skills/>
+        <Skills />
+        <Experiences />
       </motion.div>
     </Stack>
   );

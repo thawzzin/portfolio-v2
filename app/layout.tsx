@@ -1,18 +1,18 @@
 import "./globals.css";
-import "@mantine/core/styles.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans } from "next/font/google";
 import {
   ColorSchemeScript,
   mantineHtmlProps,
   MantineProvider,
 } from "@mantine/core";
 import { theme } from "@/theme";
+import "@mantine/core/styles.css";
 
-const inter = Inter({
+const noto = Noto_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
+  variable: "--font-noto",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${noto.variable} antialiased`}
       >
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>

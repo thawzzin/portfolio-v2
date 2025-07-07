@@ -7,6 +7,7 @@ export const skillGroups = [
       { name: "JavaScript", icon: "/icons/javascript.svg" },
       { name: "TypeScript", icon: "/icons/typescript.svg" },
       { name: "Tailwind Css", icon: "/icons/tailwind.svg" },
+      { name: "Redux", icon: "/icons/redux.svg" },
       { name: "Reactjs", icon: "/icons/reactjs.svg" },
       { name: "Nextjs", icon: "/icons/nextjs.svg" },
     ],
