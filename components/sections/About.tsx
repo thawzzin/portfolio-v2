@@ -1,4 +1,4 @@
-import { Divider, Group, Stack, Text, Title } from "@mantine/core";
+import { Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 
 const About = () => {

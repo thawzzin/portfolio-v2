@@ -6,7 +6,7 @@ import { skillGroups } from "@/constants/skills";
 
 const Skills = () => {
   return (
-    <section id="about">
+    <section id="skills">
       <Stack p={100} py={50} tt={"uppercase"} gap={"4rem"} pos={"relative"}>
         <Title flex={1}>Skills /</Title>
 

@@ -20,9 +20,8 @@ const Works = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "0px 0px -600px 0px" });
 
-  console.log(isInView);
   return (
-    <section id="works" className="min-h-screen">
+    <section id="projects" className="min-h-screen">
       <Stack px={100} py={"xl"}>
         <Group wrap="nowrap" gap={"xl"} align="start">
           <Title tt={"uppercase"} flex={1}>

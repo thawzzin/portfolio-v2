@@ -3,6 +3,7 @@
 import About from "@/components/sections/About";
 import Experiences from "@/components/sections/Experiences";
 import Hero from "@/components/sections/Hero";
+import References from "@/components/sections/References";
 import Skills from "@/components/sections/Skills";
 import Works from "@/components/sections/Works";
 import { Container, Divider, Stack, Text, Title } from "@mantine/core";
@@ -38,6 +39,7 @@ export default function Home() {
         <Works />
         <Skills />
         <Experiences />
+        <References/>
       </motion.div>
     </Stack>
   );
