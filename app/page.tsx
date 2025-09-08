@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
 import GithubContri from "@/components/sections/GithubContri";
 import Hero from "@/components/sections/Hero";
@@ -40,8 +41,9 @@ export default function Home() {
         <Works />
         <Skills />
         <Experiences />
-        <References/>
-        <GithubContri/>
+        <References />
+        <GithubContri />
+        <Contact />
       </motion.div>
     </Stack>
   );
