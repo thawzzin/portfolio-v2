@@ -2,6 +2,7 @@
 
 import About from "@/components/sections/About";
 import Experiences from "@/components/sections/Experiences";
+import GithubContri from "@/components/sections/GithubContri";
 import Hero from "@/components/sections/Hero";
 import References from "@/components/sections/References";
 import Skills from "@/components/sections/Skills";
@@ -40,6 +41,7 @@ export default function Home() {
         <Skills />
         <Experiences />
         <References/>
+        <GithubContri/>
       </motion.div>
     </Stack>
   );
