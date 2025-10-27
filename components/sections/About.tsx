@@ -1,14 +1,23 @@
 import { Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
+import SplitText from "../reusable/SplitText";
 
 const About = () => {
   return (
     <section id="about">
       <Stack p={100} py={50}>
         <Group wrap="nowrap" gap={"xl"} align="start">
-            <Title flex={1} tt={"uppercase"}>
-              About Me /
-            </Title>
+          <SplitText
+            text="About Me /"
+            className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+            delay={100}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+          />
 
           <Stack w={"50%"}>
             <Title order={4}>Hi, I am Thaw Zin, a web developer.</Title>

@@ -3,14 +3,14 @@ export const testimonials = [
     quote:
       "I had the pleasure of working with Thaw Zin at Blue Planet Co., Ltd on several IT projects. As a Frontend Developer, he consistently impressed me with his creativity, strategic thinking, and ability to lead cross-functional teams. He brought energy to every project and was always ready to support his teammates. I highly recommend Thaw Zin to any team looking for a dedicated and innovative professional.",
     name: "Eaint Thayaphy Oo",
-    designation: "Project Coordinator - KBZ",
+    designation: "Project Coordinator",
     src: "/images/avatar3.png",
   },
   {
     quote:
       "Working with Thaw Zin has been a great experience, as he brings a high level of commitment to everything he does. He's incredibly reliable when it comes to frontend development, consistently delivering quality work on time. As a team player, he’s always ready to lend a hand and collaborate to solve problems. His attention to detail and ability to adapt quickly make him a valuable asset to any project. I believe Thaw Zin's strong work ethic and positive attitude contribute significantly to the success of our team.",
     name: "Ent Bhone Myint Mo",
-    designation: "Senior Fullstack Developer - Smilax Global",
+    designation: "Senior Software Engineer",
     src: "/images/avatar2.png",
   },
   {

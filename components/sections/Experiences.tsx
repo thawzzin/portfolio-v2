@@ -1,13 +1,22 @@
 import { experiences } from "@/constants/experiences";
 import { Stack, Text, Timeline, Title } from "@mantine/core";
 import React from "react";
+import SplitText from "../reusable/SplitText";
 
 const Experiences = () => {
   return (
     <Stack p={100} py={50} gap={50}>
-      <Title flex={1} tt={"uppercase"}>
-        Experiences /
-      </Title>
+      <SplitText
+        text="Experiences /"
+        className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+        delay={100}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+      />
       <Stack gap={60}>
         <Timeline bulletSize={24} lineWidth={2}>
           {experiences.map((experience, index) => (

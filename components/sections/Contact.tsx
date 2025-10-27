@@ -2,15 +2,24 @@ import { Anchor, Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 import { IconButton } from "../reusable/IconButton";
 import { socials } from "@/constants/contact";
+import SplitText from "../reusable/SplitText";
 
 const Contact = () => {
   return (
     <section id="about">
       <Stack p={100} py={50}>
         <Group wrap="nowrap" gap={"xl"} align="start">
-          <Title flex={1} tt={"uppercase"}>
-            Contact /
-          </Title>
+          <SplitText
+            text="Contact /"
+            className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+            delay={100}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+          />
 
           <Stack w={"50%"} mt={20}>
             <Stack gap={0}>

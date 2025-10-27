@@ -1,5 +1,6 @@
 "use client";
 
+import Navbar from "@/components/common/Navbar";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
@@ -8,24 +9,14 @@ import Hero from "@/components/sections/Hero";
 import References from "@/components/sections/References";
 import Skills from "@/components/sections/Skills";
 import Works from "@/components/sections/Works";
-import { Container, Divider, Stack, Text, Title } from "@mantine/core";
-import { motion, useScroll, useTransform } from "motion/react";
+import { Stack } from "@mantine/core";
 
 export default function Home() {
   return (
-    <Stack bg={"blue.0"} mih={"100vh"} c={"white"} pos={"relative"}>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          zIndex: 1,
-        }}
-      >
-        <Hero />
-      </div>
-      <motion.div
+    <>
+      <Navbar />
+      <Hero />
+      <Stack
         style={{
           position: "absolute",
           zIndex: 2,
@@ -44,7 +35,7 @@ export default function Home() {
         <References />
         <GithubContri />
         <Contact />
-      </motion.div>
-    </Stack>
+      </Stack>
+    </>
   );
 }

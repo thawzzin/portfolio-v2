@@ -1,6 +1,13 @@
 import { createTheme, rem } from "@mantine/core";
 
 export const theme = createTheme({
+  breakpoints: {
+    xs: "0em",
+    sm: "30em",
+    md: "48em",
+    lg: "64em",
+    xl: "74em",
+  },
   fontSizes: {
     xs: rem(12),
     sm: rem(14),

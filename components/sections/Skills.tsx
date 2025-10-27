@@ -3,12 +3,23 @@ import React from "react";
 import FloatingSkills from "../common/FloatingSkills";
 import Image from "next/image";
 import { skillGroups } from "@/constants/skills";
+import SplitText from "../reusable/SplitText";
 
 const Skills = () => {
   return (
     <section id="skills">
       <Stack p={100} py={50} tt={"uppercase"} gap={"4rem"} pos={"relative"}>
-        <Title flex={1}>Skills /</Title>
+        <SplitText
+          text="Skills /"
+          className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+          delay={100}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+        />
 
         {/* <FloatingSkills/> */}
 
