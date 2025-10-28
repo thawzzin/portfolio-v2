@@ -5,10 +5,10 @@ import SplitText from "../reusable/SplitText";
 
 const Experiences = () => {
   return (
-    <Stack p={100} py={50} gap={50}>
+    <Stack gap={50}>
       <SplitText
         text="Experiences /"
-        className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+        className="text-4xl md:text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
         delay={100}
         ease="power3.out"
         splitType="chars"
@@ -29,7 +29,7 @@ const Experiences = () => {
               }
               title={<Text>{experience.company}</Text>}
             >
-              <Title order={2}>{experience.position}</Title>
+              <Title fz={{xs: "28",md:"32"}}>{experience.position}</Title>
               <Text>{experience.duration}</Text>
             </Timeline.Item>
           ))}

@@ -1,4 +1,4 @@
-import { Anchor, Group, Stack, Text, Title } from "@mantine/core";
+import { Anchor, Flex, Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 import { IconButton } from "../reusable/IconButton";
 import { socials } from "@/constants/contact";
@@ -6,12 +6,17 @@ import SplitText from "../reusable/SplitText";
 
 const Contact = () => {
   return (
-    <section id="about">
-      <Stack p={100} py={50}>
-        <Group wrap="nowrap" gap={"xl"} align="start">
+    <section id="contact">
+      <Stack>
+        <Flex
+          direction={{ xs: "column", md: "row" }}
+          wrap="nowrap"
+          gap={"xl"}
+          align="start"
+        >
           <SplitText
             text="Contact /"
-            className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+            className="text-4xl md:text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
             delay={100}
             ease="power3.out"
             splitType="chars"
@@ -21,7 +26,7 @@ const Contact = () => {
             rootMargin="-100px"
           />
 
-          <Stack w={"50%"} mt={20}>
+          <Stack w={{ xs: "100%", md: "50%" }} mt={20}>
             <Stack gap={0}>
               <Text>Phone</Text>
               <Title order={5}>+66923901688</Title>
@@ -48,7 +53,7 @@ const Contact = () => {
               </Group>
             </Stack>
           </Stack>
-        </Group>
+        </Flex>
       </Stack>
     </section>
   );

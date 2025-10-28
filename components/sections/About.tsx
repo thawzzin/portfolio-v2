@@ -1,15 +1,15 @@
-import { Group, Stack, Text, Title } from "@mantine/core";
+import { Flex, Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 import SplitText from "../reusable/SplitText";
 
 const About = () => {
   return (
     <section id="about">
-      <Stack p={100} py={50}>
-        <Group wrap="nowrap" gap={"xl"} align="start">
+      <Stack>
+        <Flex direction={{ xs: "column", md: "row" }} gap={"xl"} align="start">
           <SplitText
             text="About Me /"
-            className="text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
+            className="text-4xl md:text-6xl uppercase font-semibold text-[#D1D1C7] flex-1"
             delay={100}
             ease="power3.out"
             splitType="chars"
@@ -19,7 +19,7 @@ const About = () => {
             rootMargin="-100px"
           />
 
-          <Stack w={"50%"}>
+          <Stack w={{md:"50%"}}>
             <Title order={4}>Hi, I am Thaw Zin, a web developer.</Title>
             <Text>
               As an experienced web developer with computer science education
@@ -38,7 +38,7 @@ const About = () => {
               effectively to any team.
             </Text>
           </Stack>
-        </Group>
+        </Flex>
       </Stack>
     </section>
   );

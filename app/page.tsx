@@ -27,6 +27,9 @@ export default function Home() {
           borderTop: "1px solid #28427b",
           backgroundColor: "#0d1526",
         }}
+        px={{ xs: 20, md: 100 }}
+        py={30}
+        className="space-y-12 md:space-y-24"
       >
         <About />
         <Works />

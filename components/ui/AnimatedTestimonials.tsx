@@ -47,10 +47,10 @@ export const AnimatedTestimonials = ({
   }, [autoplay]);
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-10 antialiased md:max-w-full md:px-8 lg:px-12">
-      <div className="relative flex items-center gap-x-20">
-        <div className="flex-1">
-          <div className="relative h-80 w-full">
+    <div className="mx-auto px-4 md:py-10 antialiased max-w-full md:px-8 lg:px-12">
+      <div className="relative flex flex-col md:flex-row md:items-center gap-x-20">
+        <div className="md:flex-1">
+          <div className="relative h-80 w-[80%] mx-auto md:w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -96,7 +96,7 @@ export const AnimatedTestimonials = ({
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-4 w-[70%]">
+        <div className="flex flex-col justify-between py-4 md:w-[70%]">
           <motion.div
             key={active}
             initial={{
@@ -117,8 +117,8 @@ export const AnimatedTestimonials = ({
             }}
           >
             <Title order={3}>{testimonials[active].name}</Title>
-            <Text>{testimonials[active].designation}</Text>
-            <motion.p className="mt-8 text-lg text-[#A29E9A]">
+            <Text fz={14}>{testimonials[active].designation}</Text>
+            <motion.p className="mt-4 md:mt-8 text-lg text-[#A29E9A]">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -137,14 +137,14 @@ export const AnimatedTestimonials = ({
                     ease: "easeInOut",
                     delay: 0.02 * index,
                   }}
-                  className="inline-block"
+                  className="inline-block text-[16px]"
                 >
                   {word}&nbsp;
                 </motion.span>
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-5">
+          <div className="flex gap-4 pt-5 md:pt-5">
             <button
               onClick={handlePrev}
               className="group/button cursor-pointer flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"

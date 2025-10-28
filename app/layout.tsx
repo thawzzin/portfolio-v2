@@ -30,9 +30,7 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body
-        className={`${noto.variable} antialiased`}
-      >
+      <body className={`${noto.variable} antialiased`}>
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>

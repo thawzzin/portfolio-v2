@@ -19,9 +19,13 @@ const WorkCard = ({ work }: { work: any }) => {
         </div>
         <div className="flex md:gap-20 justify-between md:justify-start flex-wrap">
           {work.githubUrl && (
-            <ArrowButton text="View on GitHub" url={work.githubUrl} />
+            <ArrowButton url={work.githubUrl} >
+              View on Github
+            </ArrowButton>
           )}
-          {work.url && <ArrowButton text="View Live Demo" url={work.url} />}
+          {work.url && <ArrowButton url={work.url} >
+            View Live Demo
+          </ArrowButton>}
         </div>
       </Stack>
       <div className="relative md:w-[60%]">
@@ -30,7 +34,7 @@ const WorkCard = ({ work }: { work: any }) => {
             <div
               className={
                 work.type === "mobile"
-                  ? "md:ml-10 md:w-60 md:h-[450px] w-32 h-56 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2 vid"
+                  ? "md:ml-10 md:w-60 md:h-[450px] w-32 h-56 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2"
                   : "md:ml-10 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2"
               }
             >
@@ -49,6 +53,7 @@ const WorkCard = ({ work }: { work: any }) => {
                   width={1000}
                   height={100}
                   className="w-full h-full object-fill"
+                  unoptimized
                 />
               )}
             </div>
@@ -70,7 +75,7 @@ const WorkCard = ({ work }: { work: any }) => {
               alt="project"
               width={150}
               height={200}
-              className="md:w-60 md:h-[450px] w-32 h-56"
+              className="md:w-60 md:h-[450px] w-32 h-56 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2"
               unoptimized
             />
           )}

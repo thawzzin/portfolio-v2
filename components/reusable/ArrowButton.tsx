@@ -1,14 +1,20 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
-const ArrowButton = ({ text, url }: { text: string; url: string }) => {
+const ArrowButton = ({
+  children,
+  url,
+}: {
+  children: ReactNode;
+  url?: string;
+}) => {
   return (
     <StyledWrapper>
       <button
         className="cta flex items-center text-[#D1D1C7] my-5"
-        onClick={() => window.open(url, "_blank")}
+        onClick={() => url && window.open(url, "_blank")}
       >
-        <span className="hover-underline-animation"> {text} </span>
+        <span className="hover-underline-animation"> {children} </span>
         <svg
           className="-mt-2"
           id="arrow-horizontal"

@@ -72,7 +72,7 @@ export const theme = createTheme({
     Text: {
       defaultProps: {
         c: "white.8",
-        fz: "lg",
+        // fz: "lg",
       },
     },
     Title: {

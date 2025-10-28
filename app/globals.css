@@ -8,11 +8,11 @@ body {
   font-family: var(--font-noto), sans-serif!important;
 }
 
-.hero {
+/* .hero {
   background: linear-gradient(300deg, #000000, #14213d, #000000);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-}
+} */
 
 .background {
   position: absolute;

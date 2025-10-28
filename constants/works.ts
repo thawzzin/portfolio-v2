@@ -50,7 +50,7 @@ export const works = [
     description:
       "A mobile movie streaming app built with React Native and Firebase Authentication, allowing users to browse films, watch trailers, and stream movies securely on the go.",
     video: "/videos/filmverse-mobile2.mp4",
-    image: "/images/filmverse-mobile-view.png",
+    image: "/images/filmverse-mobile.png",
     githubUrl: "https://github.com/Zett1e/Filmverse-mobile",
     // img: "/images/film.png",
     icons: ["/icons/reactjs.svg", "/icons/firebase.svg"],
