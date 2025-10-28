@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/common/Navbar";
+import SmoothScroll from "@/components/common/SmoothScroll";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
@@ -14,31 +15,33 @@ import { Stack } from "@mantine/core";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Stack
-        style={{
-          position: "absolute",
-          zIndex: 2,
-          top: "100vh",
-          // maxHeight: "100vh",
-          width: "100%",
-          borderRadius: "30px 30px 0 0",
-          borderTop: "1px solid #28427b",
-          backgroundColor: "#0d1526",
-        }}
-        px={{ xs: 20, md: 100 }}
-        py={30}
-        className="space-y-12 md:space-y-24"
-      >
-        <About />
-        <Works />
-        <Skills />
-        <Experiences />
-        <References />
-        <GithubContri />
-        <Contact />
-      </Stack>
+      <SmoothScroll>
+        <Navbar />
+        <Hero />
+        <Stack
+          style={{
+            position: "absolute",
+            zIndex: 2,
+            top: "100vh",
+            // maxHeight: "100vh",
+            width: "100%",
+            borderRadius: "30px 30px 0 0",
+            borderTop: "1px solid #28427b",
+            backgroundColor: "#0d1526",
+          }}
+          px={{ xs: 20, md: 100 }}
+          py={30}
+          className="space-y-12 md:space-y-24"
+        >
+          <About />
+          <Works />
+          <Skills />
+          <Experiences />
+          <References />
+          <GithubContri />
+          <Contact />
+        </Stack>
+      </SmoothScroll>
     </>
   );
 }
