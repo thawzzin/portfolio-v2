@@ -1,5 +1,7 @@
 "use client";
 
+import Menu from "@/components/common/Menu";
+import StaggeredMenu from "@/components/common/Menu";
 import Navbar from "@/components/common/Navbar";
 import SmoothScroll from "@/components/common/SmoothScroll";
 import About from "@/components/sections/About";
@@ -16,7 +18,10 @@ export default function Home() {
   return (
     <>
       <SmoothScroll>
-        <Navbar />
+        {/* <div className="fixed top-0 right-20 z-50">
+          <Menu />
+        </div> */}
+        
         <Hero />
         <Stack
           style={{

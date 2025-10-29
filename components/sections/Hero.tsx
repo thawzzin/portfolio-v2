@@ -1,12 +1,19 @@
 import React, { useRef } from "react";
-import { Button, Divider, Stack, Text, Title } from "@mantine/core";
+import { Button, Divider, Group, Stack, Text, Title } from "@mantine/core";
 import Reveal from "../reusable/Reveal";
 import { useScroll, useTransform } from "motion/react";
 import { motion } from "motion/react";
-import ArrowButton from "../reusable/ArrowButton";
-import Stars from "../common/StarsBg";
 import StarsBg from "../common/StarsBg";
 import Image from "next/image";
+import { Instrument_Serif } from "next/font/google";
+import Navbar from "../common/Navbar";
+import { ReactTyped } from "react-typed";
+import ScrollSign from "../common/ScrollSign";
+
+const Instrument = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const Hero = () => {
   const ref = useRef(null);
@@ -20,11 +27,14 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   return (
-    <div className="hero py-10 px-20 space-y-20 min-h-screen fixed w-full flex items-end">
+    <div className="hero py-5 md:py-10 px-5 md:px-20 space-y-20 min-h-screen fixed w-full flex items-end">
       <StarsBg />
+      <motion.div style={{ opacity }}>
+        <Navbar />
+      </motion.div>
       <motion.div
         style={{ opacity, scale }}
-        className="absolute top-10 left-20"
+        className="absolute top-10 left-5 md:left-20"
       >
         <Image
           src={"/images/logo3.png"}
@@ -37,15 +47,43 @@ const Hero = () => {
       <div ref={ref} className="flex-1">
         <motion.div style={{ y, opacity, scale }}>
           <Stack w={"100%"}>
-            <Text mb={-70}>It&apos;s me</Text>
-            <Title fz={200} fw={"bold"}>
+            <Text mb={{ xs: -30, md: -50 }} fs={"italic"}>
+              It&apos;s me
+            </Text>
+            <Title
+              fz={{ xs: 100, md: 200 }}
+              // fw={"bold"}
+              fs={"italic"}
+              className={Instrument.className}
+            >
               Thaw Zin
             </Title>
-            <Divider size={5} my={30} w={"70%"} color="white.4" />
-            <Text fz={20} w={"40%"}>
-              Code, coffee, creativity — mix them together and you get web
-              experiences people actually enjoy.
+            <Text
+              fs={"italic"}
+              lts={4}
+              tt={"uppercase"}
+              fz={{ xs: 18, md: 20 }}
+              fw={"bold"}
+            >
+              Your trusty <br className="md:hidden" />
+              <ReactTyped
+                strings={[
+                  "Web Developer",
+                  "Frontend Developer",
+                  "Full-Stack Developer",
+                ]}
+                loop
+                typeSpeed={40}
+              />
             </Text>
+            <Divider size={5} my={30} w={"70%"} color="white.4" />
+            <div className="flex flex-wrap gap-y-10 justify-center md:justify-between">
+              <Text fz={20} w={{ xs: "100%", md: "40%" }}>
+                Code, coffee, creativity — mix them together and you get web
+                experiences people actually enjoy.
+              </Text>
+              <ScrollSign />
+            </div>
           </Stack>
         </motion.div>
       </div>
