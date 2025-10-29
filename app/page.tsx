@@ -1,9 +1,9 @@
 "use client";
 
 import Menu from "@/components/common/Menu";
-import StaggeredMenu from "@/components/common/Menu";
 import Navbar from "@/components/common/Navbar";
 import SmoothScroll from "@/components/common/SmoothScroll";
+import StaggeredMenu from "@/components/common/StaggeredMenu";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
@@ -12,16 +12,17 @@ import Hero from "@/components/sections/Hero";
 import References from "@/components/sections/References";
 import Skills from "@/components/sections/Skills";
 import Works from "@/components/sections/Works";
+import { menuItems, socialItems } from "@/constants/menu";
 import { Stack } from "@mantine/core";
 
 export default function Home() {
   return (
     <>
       <SmoothScroll>
-        {/* <div className="fixed top-0 right-20 z-50">
-          <Menu />
-        </div> */}
-        
+        {/* <Menu /> */}
+        <div className="">
+          <StaggeredMenu items={menuItems} socialItems={socialItems} />
+        </div>
         <Hero />
         <Stack
           style={{

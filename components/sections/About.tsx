@@ -1,6 +1,7 @@
 import { Flex, Group, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 import SplitText from "../reusable/SplitText";
+import Reveal from "../reusable/Reveal";
 
 const About = () => {
   return (
@@ -19,24 +20,29 @@ const About = () => {
             rootMargin="-100px"
           />
 
-          <Stack w={{md:"50%"}}>
-            <Title order={4}>Hi, I am Thaw Zin, a web developer.</Title>
-            <Text>
-              As an experienced web developer with computer science education
-              background, I have a solid foundation in both frontend and backend
-              technologies, along with experience working with frameworks and
-              libraries like Reactjs, Nextjs and Nestjs to build user-friendly
-              web applications. I am skilled in both front-end and back-end
-              development, enabling me to create seamless and responsive
-              applications that deliver a great user experience. I am always
-              eager to improve my skills and stay updated on the latest
-              technologies and best practices in the field.
-              <br /> <br />I am confident in my ability to quickly learn and
-              adapt to new technologies and challenges. With strong
-              problem-solving skills and a passion for web development, I am
-              committed to delivering high-quality work and contributing
-              effectively to any team.
-            </Text>
+          <Stack w={{ md: "50%" }}>
+            <Reveal>
+              <Title order={4}>Hi, I am Thaw Zin, a web developer.</Title>
+            </Reveal>
+            <Reveal>
+              <Text>
+                As an experienced web developer with computer science education
+                background, I have a solid foundation in both frontend and
+                backend technologies, along with experience working with
+                frameworks and libraries like Reactjs, Nextjs and Nestjs to
+                build user-friendly web applications. I am skilled in both
+                front-end and back-end development, enabling me to create
+                seamless and responsive applications that deliver a great user
+                experience. I am always eager to improve my skills and stay
+                updated on the latest technologies and best practices in the
+                field.
+                <br /> <br />I am confident in my ability to quickly learn and
+                adapt to new technologies and challenges. With strong
+                problem-solving skills and a passion for web development, I am
+                committed to delivering high-quality work and contributing
+                effectively to any team.
+              </Text>
+            </Reveal>
           </Stack>
         </Flex>
       </Stack>

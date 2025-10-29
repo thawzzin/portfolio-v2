@@ -4,6 +4,9 @@ import FloatingSkills from "../common/FloatingSkills";
 import Image from "next/image";
 import { skillGroups } from "@/constants/skills";
 import SplitText from "../reusable/SplitText";
+import Reveal from "../reusable/Reveal";
+import DecryptedText from "../reusable/DecryptedText";
+import BlurText from "../reusable/BlurText";
 
 const Skills = () => {
   return (
@@ -28,9 +31,9 @@ const Skills = () => {
 
           {skillGroups.map((group, index) => (
             <Group key={index} wrap="nowrap" gap={"xl"} align="start">
-              <Title order={2} flex={1}>
-                {group.title}
-              </Title>
+              <Reveal className="flex-1">
+                <Title order={2}>{group.title}</Title>
+              </Reveal>
               <Stack w={"60%"}>
                 <Group className="!gap-x-14">
                   {group.skills.map((skill, index) => (
@@ -41,7 +44,15 @@ const Skills = () => {
                         width={30}
                         height={30}
                       />
-                      <Title order={5}>{skill.name}</Title>
+                      {/* <Title order={5}>{skill.name}</Title> */}
+                      <DecryptedText
+                        text={skill.name}
+                        animateOn="view"
+                        revealDirection="center"
+                        className="text-lg font-bold text-[#D1D1C7]"
+                        parentClassName="text-lg font-bold text-[#D1D1C7]"
+                        encryptedClassName="text-lg font-bold text-[#D1D1C7]"
+                      />
                     </Group>
                   ))}
                 </Group>
@@ -62,32 +73,31 @@ const Skills = () => {
           threshold={0.1}
           rootMargin="-100px"
         />
-        <Grid>
+        <Grid gutter={30}>
           <GridCol span={4}>
             {skillGroups[0].skills.map((skill, index) => (
-              <Text fw={500} key={index}>
+              <BlurText className="font-[500] text-[#A29E9A]" key={index}>
                 {skill.name}
-              </Text>
+              </BlurText>
             ))}
           </GridCol>
           <GridCol span={4}>
             {skillGroups[1].skills.map((skill, index) => (
-              <Text fw={500} key={index}>
+              <BlurText className="font-[500] text-[#A29E9A]" key={index}>
                 {skill.name}
-              </Text>
+              </BlurText>
+            ))}
+            {skillGroups[2].skills.map((skill, index) => (
+              <BlurText className="font-[500] text-[#A29E9A]" key={index}>
+                {skill.name}
+              </BlurText>
             ))}
           </GridCol>
           <GridCol span={4}>
-            {skillGroups[2].skills.map((skill, index) => (
-              <Text fw={500} key={index}>
-                {skill.name}
-              </Text>
-            ))}
-            <br />
             {skillGroups[3].skills.map((skill, index) => (
-              <Text fw={500} key={index}>
+              <BlurText className="font-[500] text-[#A29E9A]" key={index}>
                 {skill.name}
-              </Text>
+              </BlurText>
             ))}
           </GridCol>
         </Grid>

@@ -6,19 +6,9 @@ import { motion } from "motion/react";
 import { works } from "@/constants/works";
 import SplitText from "../reusable/SplitText";
 import WorkCard from "../common/WorkCard";
+import Reveal from "../reusable/Reveal";
 
 const Works = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "0px 0px -600px 0px" });
-
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    }
-  }, [isInView]);
-
   return (
     <section id="projects" className="min-h-screen">
       <Stack>
@@ -34,10 +24,18 @@ const Works = () => {
             threshold={0.1}
             rootMargin="-100px"
           />
-          <Title order={4} w={{ md: "50%" }}>
-            &quot;A showcase of web applications I&apos;ve built, blending clean
-            code with intuitive design.&quot;
-          </Title>
+          <SplitText
+            text='"A showcase of web applications I&apos;ve built, blending clean
+            code with intuitive design."'
+            className="text-xl font-semibold text-[#D1D1C7] flex-1"
+            delay={20}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+          />
         </Flex>
         {works.map((work) => (
           <WorkCard key={work.title} work={work} />

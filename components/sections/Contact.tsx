@@ -3,6 +3,8 @@ import React from "react";
 import { IconButton } from "../reusable/IconButton";
 import { socials } from "@/constants/contact";
 import SplitText from "../reusable/SplitText";
+import Reveal from "../reusable/Reveal";
+import BlurText from "../reusable/BlurText";
 
 const Contact = () => {
   return (
@@ -29,20 +31,26 @@ const Contact = () => {
           <Stack w={{ xs: "100%", md: "50%" }} mt={20}>
             <Stack gap={0}>
               <Text>Phone</Text>
-              <Title order={5}>+66923901688</Title>
-              <Title order={5}>+959788686252</Title>
+              <Title order={5}>
+                <BlurText>+66923901688</BlurText>
+              </Title>
+              <Title order={5}>
+                <BlurText>+959788686252</BlurText>
+              </Title>
             </Stack>
             <Stack gap={0}>
               <Text>Email</Text>
               <Anchor href="mailto:thawzzin.dev@gmail.com">
-                <Title order={5}>thawzzin.dev@gmail.com</Title>
+                <Title order={5}>
+                  <BlurText>thawzzin.dev@gmail.com</BlurText>
+                </Title>
               </Anchor>
             </Stack>
             <Stack gap={0}>
               <Text>Socials</Text>
               <Group mt={2}>
                 {socials.map((social: any, index: number) => (
-                  <Anchor key={index} href={social.url}>
+                  <Anchor key={index} href={social.url} className="hover:rotate-[360deg] hover:scale-125 transition-all duration-700">
                     <IconButton
                       name={social.logoName}
                       size={32}

@@ -5,7 +5,6 @@ const ScrollSign = () => {
   return (
     <StyledWrapper>
       <div className="main__action">
-        <a className="main__scroll" href="#">
           <div className="main__scroll-box">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none" />
@@ -16,7 +15,6 @@ const ScrollSign = () => {
             </svg>
           </div>
           <span className="main__scroll-text">Scroll</span>
-        </a>
       </div>
     </StyledWrapper>
   );

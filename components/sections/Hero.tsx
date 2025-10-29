@@ -9,10 +9,12 @@ import { Instrument_Serif } from "next/font/google";
 import Navbar from "../common/Navbar";
 import { ReactTyped } from "react-typed";
 import ScrollSign from "../common/ScrollSign";
+import BlurText from "../reusable/BlurText";
 
 const Instrument = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
+  style: ["italic"],
 });
 
 const Hero = () => {
@@ -27,11 +29,8 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   return (
-    <div className="hero py-5 md:py-10 px-5 md:px-20 space-y-20 min-h-screen fixed w-full flex items-end">
+    <div className="hero py-5 md:py-10 px-5 md:pl-20 md:pr-10 space-y-20 min-h-screen fixed w-full flex items-end">
       <StarsBg />
-      <motion.div style={{ opacity }}>
-        <Navbar />
-      </motion.div>
       <motion.div
         style={{ opacity, scale }}
         className="absolute top-10 left-5 md:left-20"
@@ -47,43 +46,47 @@ const Hero = () => {
       <div ref={ref} className="flex-1">
         <motion.div style={{ y, opacity, scale }}>
           <Stack w={"100%"}>
-            <Text mb={{ xs: -30, md: -50 }} fs={"italic"}>
-              It&apos;s me
-            </Text>
+            <Reveal className="-mb-7 md:-mb-12">
+              <Text fs={"italic"}>It&apos;s me</Text>
+            </Reveal>
             <Title
               fz={{ xs: 100, md: 200 }}
               // fw={"bold"}
               fs={"italic"}
               className={Instrument.className}
             >
-              Thaw Zin
+              <BlurText>Thaw Zin</BlurText>
             </Title>
-            <Text
-              fs={"italic"}
-              lts={4}
-              tt={"uppercase"}
-              fz={{ xs: 18, md: 20 }}
-              fw={"bold"}
-            >
-              Your trusty <br className="md:hidden" />
-              <ReactTyped
-                strings={[
-                  "Web Developer",
-                  "Frontend Developer",
-                  "Full-Stack Developer",
-                ]}
-                loop
-                typeSpeed={40}
-              />
-            </Text>
-            <Divider size={5} my={30} w={"70%"} color="white.4" />
-            <div className="flex flex-wrap gap-y-10 justify-center md:justify-between">
-              <Text fz={20} w={{ xs: "100%", md: "40%" }}>
-                Code, coffee, creativity — mix them together and you get web
-                experiences people actually enjoy.
+            <Reveal>
+              <Text
+                fs={"italic"}
+                lts={4}
+                tt={"uppercase"}
+                fz={{ xs: 18, md: 20 }}
+                fw={"bold"}
+              >
+                Your trusty <br className="md:hidden" />
+                <ReactTyped
+                  strings={[
+                    "Web Developer",
+                    "Frontend Developer",
+                    "Full-Stack Developer",
+                  ]}
+                  loop
+                  typeSpeed={40}
+                />
               </Text>
-              <ScrollSign />
-            </div>
+            </Reveal>
+            <Reveal width="100%">
+              <Divider size={5} my={30} w={"70%"} color="white.4" />
+              <div className="flex flex-wrap gap-y-10 justify-center md:justify-between items-end">
+                <Text fz={20} w={{ xs: "100%", md: "40%" }}>
+                  Code, coffee, creativity — mix them together and you get web
+                  experiences people actually enjoy.
+                </Text>
+                <ScrollSign />
+              </div>
+            </Reveal>
           </Stack>
         </motion.div>
       </div>

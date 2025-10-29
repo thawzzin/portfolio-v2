@@ -3,6 +3,7 @@ import React from "react";
 import { AnimatedTestimonials } from "../ui/AnimatedTestimonials";
 import { testimonials } from "@/constants/testimonials";
 import SplitText from "../reusable/SplitText";
+import Reveal from "../reusable/Reveal";
 
 const References = () => {
   return (
@@ -19,7 +20,8 @@ const References = () => {
           threshold={0.1}
           rootMargin="-100px"
         />
-        <AnimatedTestimonials testimonials={testimonials} />
+        
+          <AnimatedTestimonials testimonials={testimonials} />
       </Stack>
     </section>
   );

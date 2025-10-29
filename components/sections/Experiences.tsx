@@ -2,6 +2,7 @@ import { experiences } from "@/constants/experiences";
 import { Stack, Text, Timeline, Title } from "@mantine/core";
 import React from "react";
 import SplitText from "../reusable/SplitText";
+import Reveal from "../reusable/Reveal";
 
 const Experiences = () => {
   return (
@@ -29,8 +30,10 @@ const Experiences = () => {
               }
               title={<Text>{experience.company}</Text>}
             >
-              <Title fz={{xs: "28",md:"32"}}>{experience.position}</Title>
-              <Text>{experience.duration}</Text>
+              <Reveal>
+                <Title fz={{ xs: "28", md: "32" }}>{experience.position}</Title>
+                <Text>{experience.duration}</Text>
+              </Reveal>
             </Timeline.Item>
           ))}
         </Timeline>

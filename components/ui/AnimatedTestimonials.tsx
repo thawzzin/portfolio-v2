@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 
 import { useEffect, useState } from "react";
+import Reveal from "../reusable/Reveal";
 
 type Testimonial = {
   quote: string;
@@ -83,14 +84,16 @@ export const AnimatedTestimonials = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <Image
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    width={400}
-                    height={400}
-                    draggable={false}
-                    className="h-full w-full rounded-3xl object-contain object-center"
-                  />
+                  <Reveal>
+                    <Image
+                      src={testimonial.src}
+                      alt={testimonial.name}
+                      width={400}
+                      height={400}
+                      draggable={false}
+                      className="h-full w-full rounded-3xl object-contain object-center"
+                    />
+                  </Reveal>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -116,33 +119,37 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <Title order={3}>{testimonials[active].name}</Title>
-            <Text fz={14}>{testimonials[active].designation}</Text>
-            <motion.p className="mt-4 md:mt-8 text-lg text-[#A29E9A]">
-              {testimonials[active].quote.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                    ease: "easeInOut",
-                    delay: 0.02 * index,
-                  }}
-                  className="inline-block text-[16px]"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
-            </motion.p>
+            <Reveal>
+              <Title order={3}>{testimonials[active].name}</Title>
+              <Text fz={14}>{testimonials[active].designation}</Text>
+            </Reveal>
+            <Reveal>
+              <motion.p className="mt-4 md:mt-8 text-lg text-[#A29E9A]">
+                {testimonials[active].quote.split(" ").map((word, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{
+                      filter: "blur(10px)",
+                      opacity: 0,
+                      y: 5,
+                    }}
+                    animate={{
+                      filter: "blur(0px)",
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.2,
+                      ease: "easeInOut",
+                      delay: 0.02 * index,
+                    }}
+                    className="inline-block text-[16px]"
+                  >
+                    {word}&nbsp;
+                  </motion.span>
+                ))}
+              </motion.p>
+            </Reveal>
           </motion.div>
           <div className="flex gap-4 pt-5 md:pt-5">
             <button

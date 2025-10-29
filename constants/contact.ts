@@ -15,5 +15,9 @@ export const socials = [
        logoName: "WhatsappLogo",
         url: "https://wa.me/66923901488" 
     },
+    {
+       logoName: "GithubLogo",
+        url: "https://github.com/thawzzin" 
+    },
     
 ]

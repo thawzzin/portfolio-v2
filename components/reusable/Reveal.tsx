@@ -5,10 +5,12 @@ const Reveal = ({
   children,
   width = "fit-content",
   isSlide = false,
+  className = "",
 }: {
   children: ReactNode;
   width?: string;
   isSlide?: boolean;
+  className?: string;
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -26,7 +28,7 @@ const Reveal = ({
   return (
     <div
       ref={ref}
-      className="relative overflow-hidden"
+      className={`${className} relative overflow-hidden`}
       style={{ width: width }}
     >
       <motion.div
