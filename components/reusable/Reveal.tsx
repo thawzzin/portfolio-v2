@@ -6,11 +6,13 @@ const Reveal = ({
   width = "fit-content",
   isSlide = false,
   className = "",
+  delay = 0.25,
 }: {
   children: ReactNode;
   width?: string;
   isSlide?: boolean;
   className?: string;
+  delay?: number;
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -38,7 +40,7 @@ const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: delay }}
       >
         {children}
       </motion.div>

@@ -46,7 +46,7 @@ const Hero = () => {
       <div ref={ref} className="flex-1">
         <motion.div style={{ y, opacity, scale }}>
           <Stack w={"100%"}>
-            <Reveal className="-mb-7 md:-mb-12">
+            <Reveal className="-mb-7 md:-mb-12" delay={3.5}>
               <Text fs={"italic"}>It&apos;s me</Text>
             </Reveal>
             <Title
@@ -55,9 +55,9 @@ const Hero = () => {
               fs={"italic"}
               className={Instrument.className}
             >
-              <BlurText>Thaw Zin</BlurText>
+              <BlurText delay={3.5}>ThawZin</BlurText>
             </Title>
-            <Reveal>
+            <Reveal delay={3.5}>
               <Text
                 fs={"italic"}
                 lts={4}
@@ -77,7 +77,7 @@ const Hero = () => {
                 />
               </Text>
             </Reveal>
-            <Reveal width="100%">
+            <Reveal width="100%" delay={3.5}>
               <Divider size={5} my={30} w={"70%"} color="white.4" />
               <div className="flex flex-wrap gap-y-10 justify-center md:justify-between items-end">
                 <Text fz={20} w={{ xs: "100%", md: "40%" }}>

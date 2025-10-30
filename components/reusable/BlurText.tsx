@@ -34,7 +34,7 @@ const buildKeyframes = (
 
 const BlurText: React.FC<BlurTextProps> = ({
   children = "",
-  delay = 200,
+  delay = 0,
   className = "",
   animateBy = "words",
   direction = "top",
@@ -103,7 +103,8 @@ const BlurText: React.FC<BlurTextProps> = ({
         const spanTransition: Transition = {
           duration: totalDuration,
           times,
-          delay: (index * delay) / 1000,
+          delay: delay,
+          // delay: (index * delay) / 1000,
           ease: easing,
         };
 
