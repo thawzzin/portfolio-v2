@@ -3,6 +3,7 @@
 import Menu from "@/components/common/Menu";
 import Navbar from "@/components/common/Navbar";
 import SmoothScroll from "@/components/common/SmoothScroll";
+import SplashScreen from "@/components/common/SplashScreen";
 import StaggeredMenu from "@/components/common/StaggeredMenu";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
@@ -18,6 +19,7 @@ import { Stack } from "@mantine/core";
 export default function Home() {
   return (
     <>
+      <SplashScreen />
       <SmoothScroll>
         {/* <Menu /> */}
         <div className="">

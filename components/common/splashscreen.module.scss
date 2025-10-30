@@ -1,0 +1,68 @@
+.logo {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+  display: block;
+  transform: rotate(-90deg);
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.loadingpage {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  color: white;
+  background-color: #0d1526;
+}
+
+.trackingincontract {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+/**
+   * ----------------------------------------
+   * animation tracking-in-contract
+   * ----------------------------------------
+   */
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+}
