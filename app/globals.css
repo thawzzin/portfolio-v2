@@ -7,6 +7,9 @@ html {
 body {
   font-family: var(--font-noto), sans-serif !important;
   scroll-behavior: smooth;
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
 
 ::-webkit-scrollbar {
