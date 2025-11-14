@@ -1,6 +1,6 @@
 export const works = [
   {
-    title: "Comapny Landing Page",
+    title: "Company Landing Page",
     type: "web",
     description:
       "A landing page and company dashboard using React, Tailwind CSS, and Shadcn UI. Implemented reusable components, responsive layouts, and a clean, cohesive design system to enhance usability and maintainability.",
@@ -20,7 +20,7 @@ export const works = [
     title: "Job Portal",
     type: "web",
     description:
-      "a full-stack job portal as a freelance project using React.js and Express.js, based on client-provided designs. The platform features a user-facing job listing system and a secure admin panel, and was deployed on AWS for reliability and scalability.",
+      "A full-stack job portal as a freelance project using React.js and Express.js, based on client-provided designs. The platform features a user-facing job listing system and a secure admin panel, and was deployed on AWS for reliability and scalability.",
     webimg: "/images/jackinsg.png",
     image: "/images/jackinsg-mobile.png",
     url: "https://jackinsg.com",

@@ -13,7 +13,10 @@ const WorkCard = ({ work }: { work: any }) => {
           <Title order={2}>{work.title}</Title>
         </Reveal>
         <Reveal>
-          <Text className="will-change-transform"> {work.description} </Text>
+          <Text className="will-change-transform first-letter:text-[28px] first-letter:italic first-letter:font-['Title']">
+            {" "}
+            {work.description}{" "}
+          </Text>
         </Reveal>
         <Reveal>
           <div className="flex gap-5 mt-5">
