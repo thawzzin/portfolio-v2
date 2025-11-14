@@ -8,13 +8,14 @@ import StaggeredMenu from "@/components/common/StaggeredMenu";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Experiences from "@/components/sections/Experiences";
+import Footer from "@/components/sections/Footer";
 import GithubContri from "@/components/sections/GithubContri";
 import Hero from "@/components/sections/Hero";
 import References from "@/components/sections/References";
 import Skills from "@/components/sections/Skills";
 import Works from "@/components/sections/Works";
 import { menuItems, socialItems } from "@/constants/menu";
-import { Stack } from "@mantine/core";
+import { Divider, Stack } from "@mantine/core";
 
 export default function Home() {
   return (
@@ -48,6 +49,8 @@ export default function Home() {
           <References />
           <GithubContri />
           <Contact />
+          <Divider size={3} my={20} color="white.4" />
+          <Footer/>
         </Stack>
       </SmoothScroll>
     </>

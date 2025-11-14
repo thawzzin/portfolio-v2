@@ -6,7 +6,7 @@ import Reveal from "../reusable/Reveal";
 
 const GithubContri = () => {
   return (
-    <section className="hidden md:block">
+    <section className="hidden xl:block">
       <Stack
         px={{ xs: 20, md: 100 }}
         tt={"uppercase"}

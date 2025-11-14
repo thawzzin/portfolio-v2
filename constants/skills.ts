@@ -33,7 +33,7 @@ export const skillGroups = [
     skills: [
       { name: "Git", icon: "/icons/git.svg" },
       { name: "AWS", icon: "/icons/aws.svg" },
-      { name: "Firebase", icon: "/icons/firebase.svg" },
+      // { name: "Firebase", icon: "/icons/firebase.svg" },
     ],
   },
 ];

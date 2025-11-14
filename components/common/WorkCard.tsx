@@ -86,7 +86,7 @@ const WorkCard = ({ work }: { work: any }) => {
                 alt="project"
                 width={150}
                 height={200}
-                className="md:w-60 md:h-[450px] w-32 h-56 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2"
+                className="md:hidden xl:block xl:w-60 md:h-[450px] w-32 h-56 rounded-2xl overflow-hidden border-[#A6AEBA] border-solid border-2"
                 unoptimized
               />
             )}

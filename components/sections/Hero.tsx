@@ -29,7 +29,7 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   return (
-    <div className="hero py-5 md:py-10 px-5 md:pl-20 md:pr-10 space-y-20 min-h-screen fixed w-full flex items-end">
+    <div className="hero py-5 md:py-10 px-5 md:pl-20 md:pr-10 space-y-20 min-h-screen fixed w-full flex items-end xl:items-end lg:items-center">
       <StarsBg />
       <motion.div
         style={{ opacity, scale }}
