@@ -12,6 +12,6 @@ export const experiences = [
   {
     company: "Hysan Education",
     position: "Frontend Developer",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 - Nov 2025",
   },
 ];
