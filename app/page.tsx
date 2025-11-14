@@ -49,7 +49,7 @@ export default function Home() {
           <References />
           <GithubContri />
           <Contact />
-          <Divider size={3} my={20} color="white.4" />
+          <Divider size={2} my={20} color="white.4" />
           <Footer />
         </Stack>
       </SmoothScroll>
