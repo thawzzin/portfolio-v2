@@ -17,6 +17,22 @@ export const works = [
     ],
   },
   {
+    title: "School Management System",
+    type: "web",
+    description:
+      "The Hysan School Management System is a modern Learning Management System (LMS) Dashboard. Built with Next.js 14 (App Router) for fast, server-rendered components, combined with a highly intuitive and responsive user interface developed using the Mantine UI library and Tailwind CSS. State is managed efficiently using Zustand.",
+    webimg: "/images/hysan.png",
+    image: "/images/hysan-mobile.png",
+    url: "",
+    githubUrl: "",
+    icons: [
+      "/icons/nextjs.svg",
+      "/icons/tailwind.svg",
+      "/icons/mantinelogo.png",
+      "/icons/zustandlogo.png",
+    ],
+  },
+  {
     title: "Job Portal",
     type: "web",
     description:
