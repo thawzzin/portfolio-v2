@@ -33,6 +33,20 @@ export const works = [
     ],
   },
   {
+    title: "Event Platform",
+    type: "web",
+    description:
+      "A modern event discovery platform designed to showcase live concerts with a strong focus on visuals and user experience. It is built using Next.js, with dynamic routing, optimized image handling, and fully responsive layouts styled with Tailwind CSS. The project emphasizes clean architecture, performance, and scalability while presenting real-world event data in a clear and engaging way.",
+    webimg: "/images/theloop.png",
+    image: "/images/theloop-mobile.png",
+    url: "https://theloopbkk.vercel.app",
+    githubUrl: "https://github.com/thawzzin/the-loop",
+    icons: [
+      "/icons/nextjs.svg",
+      "/icons/tailwind.svg",
+    ],
+  },
+  {
     title: "Job Portal",
     type: "web",
     description:
