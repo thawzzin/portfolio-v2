@@ -46,23 +46,23 @@ export const works = [
       "/icons/tailwind.svg",
     ],
   },
-  {
-    title: "Job Portal",
-    type: "web",
-    description:
-      "A full-stack job portal as a freelance project using React.js and Express.js, based on client-provided designs. The platform features a user-facing job listing system and a secure admin panel, and was deployed on AWS for reliability and scalability.",
-    webimg: "/images/jackinsg.png",
-    image: "/images/jackinsg-mobile.png",
-    url: "https://jackinsg.com",
-    githubUrl: "",
-    icons: [
-      "/icons/reactjs.svg",
-      "/icons/tailwind.svg",
-      "/icons/shadcnui.svg",
-      "/icons/expressjs.svg",
-      "/icons/postgresql.svg",
-    ],
-  },
+  // {
+  //   title: "Job Portal",
+  //   type: "web",
+  //   description:
+  //     "A full-stack job portal as a freelance project using React.js and Express.js, based on client-provided designs. The platform features a user-facing job listing system and a secure admin panel, and was deployed on AWS for reliability and scalability.",
+  //   webimg: "/images/jackinsg.png",
+  //   image: "/images/jackinsg-mobile.png",
+  //   url: "https://jackinsg.com",
+  //   githubUrl: "",
+  //   icons: [
+  //     "/icons/reactjs.svg",
+  //     "/icons/tailwind.svg",
+  //     "/icons/shadcnui.svg",
+  //     "/icons/expressjs.svg",
+  //     "/icons/postgresql.svg",
+  //   ],
+  // },
   {
     title: "Filmverse",
     type: "web",
@@ -74,15 +74,14 @@ export const works = [
     image: "/images/filmverse-mobile-view.png",
     icons: ["/icons/nextjs.svg", "/icons/tailwind.svg"],
   },
-  {
-    title: "Filmverse Mobile",
-    type: "mobile",
-    description:
-      "A mobile movie streaming app built with React Native and Firebase Authentication, allowing users to browse films, watch trailers, and stream movies securely on the go.",
-    video: "/videos/filmverse-mobile2.mp4",
-    image: "/images/filmverse-mobile.png",
-    githubUrl: "https://github.com/Zett1e/Filmverse-mobile",
-    // img: "/images/film.png",
-    icons: ["/icons/reactjs.svg", "/icons/firebase.svg"],
-  },
+  // {
+  //   title: "Filmverse Mobile",
+  //   type: "mobile",
+  //   description:
+  //     "A mobile movie streaming app built with React Native and Firebase Authentication, allowing users to browse films, watch trailers, and stream movies securely on the go.",
+  //   video: "/videos/filmverse-mobile2.mp4",
+  //   image: "/images/filmverse-mobile.png",
+  //   githubUrl: "https://github.com/Zett1e/Filmverse-mobile",
+  //   icons: ["/icons/reactjs.svg", "/icons/firebase.svg"],
+  // },
 ];
